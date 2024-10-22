@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe</title>
+    <title>acces</title>
 
     <!-- アイコン画像 -->
     <link rel="icon" href="" />
@@ -12,12 +12,35 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/reset-Reboot.css" />
     <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- JS -->
     <script src="../scripts/main.js" defer></script>
   </head>
 
   <body>
-    <h1>アクセス</h1>
+    <div class="container">
+      <h1 class="text-center">アクセス</h1>
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.769987525458!2d139.6990608762575!3d35.65803823124688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b582c15c3cf%3A0x8c0e68a8aa03fd5c!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1729600397412!5m2!1sja!2sjp" 
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
 
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title mb-3">店舗情報</h2>
+        <p>住所: 東京都渋谷区〇〇ビル1F</p>
+        <p>アクセス: JR渋谷駅から徒歩5分</p>
+        <p>TEL: 01-2345-6789</p>
+        <p>営業時間: 10:00〜22:00</p>
+      </div>
+    </div>
   </body>
 </html>
