@@ -18,9 +18,11 @@
   </head>
 
   <body>
-    <div class="container">
-      <h1 class="text-center">アクセス</h1>
-      <div class="map">
+    <div class="container mt-5 text-center">
+      <h1 class="text-center mb-4">アクセス</h1>
+      
+      <!-- Googleマップ埋め込み -->
+      <div class="d-flex justify-content-center mb-4">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.769987525458!2d139.6990608762575!3d35.65803823124688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b582c15c3cf%3A0x8c0e68a8aa03fd5c!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1729600397412!5m2!1sja!2sjp" 
           width="600" 
@@ -31,16 +33,73 @@
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
-    </div>
 
-    <div class="card">
-      <div class="card-body">
-        <h2 class="card-title mb-3">店舗情報</h2>
-        <p>住所: 東京都渋谷区〇〇ビル1F</p>
-        <p>アクセス: JR渋谷駅から徒歩5分</p>
-        <p>TEL: 01-2345-6789</p>
-        <p>営業時間: 10:00〜22:00</p>
+      <!-- アクセス詳細 -->
+      <div class="card mx-auto" style="max-width: 600px;">
+        <div class="card-body">
+          <h4 class="card-title mb-3">店舗情報</h4>
+          <p>住所: 東京都渋谷区〇〇ビル1F</p>
+          <p>アクセス: JR渋谷駅から徒歩5分</p>
+          <p>TEL: 01-2345-6789</p>
+          <p>営業時間: 10:00〜22:00</p>
+        </div>
       </div>
     </div>
+
+    <!-- 予約 -->
+    <div class="container text-center mt-5">
+      <!-- 予約ボタン -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservation">
+        予約はこちら
+      </button>
+  
+      <!-- 予約フォーム -->
+      <div class="modal fade" id="reservation" tabindex="-1" aria-labelledby="reservationLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="reservationLabel">予約フォーム</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="reservationForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label">お名前</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">メールアドレス</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">電話番号</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="mb-3">
+                  <label for="date" class="form-label">予約日</label>
+                  <input type="date" class="form-control" id="date" required>
+                </div>
+                <button type="submit" class="btn btn-primary">送信</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('reservationForm').addEventListener('submit', function() {
+
+        // フォームのデータを取得
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const date = document.getElementById('date').value;
+  
+        alert('予約が完了しました！\nお名前: ' + name + '\nメール: ' + email + '\n電話番号: ' + phone + '\n予約日: ' + date);
+      });
+    </script>
   </body>
 </html>
