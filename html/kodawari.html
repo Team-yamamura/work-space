@@ -4,7 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe</title>
-
+    <style>
+      .center-text {
+          text-align: center;
+      }
+  </style>
+    <style>
+      .container {
+          display: flex;
+          justify-content: flex-end; /* 右寄せ */
+      }
+  </style>
+      <style>
+        .container {
+            display: flex; /* Flexboxを使用 */
+            align-items: center; /* 垂直方向を中央揃え */
+        }
+        .image {
+            margin-right: 10px; /* 文字とのスペース */
+        }
+        .item {
+            flex: 1; /* 各アイテムが同じ幅を持つ */
+            padding: 10px;
+            text-align: center; /* 中央揃え */
+        }
+    </style>
+    <style>
+      .inline {
+          display: flex; /* フレックスボックスを使用 */
+          align-items: center; /* 垂直方向の中央揃え */
+      }
+    </style>
+      <style>
+        table {
+            width: 100%;
+            border-collapse: collapse; /* セルの間の隙間をなくす */
+        }
+        th, td {
+            border: 1px solid #000; /* セルに枠を追加 */
+            padding: 8px; /* セルの内側のスペース */
+            text-align: left; /* テキストを左揃え */
+        }
+    </style>
     <!-- アイコン画像 -->
     <link rel="icon" href="" />
     <!-- フォント設定 -->
@@ -17,7 +58,8 @@
   </head>
 
   <body>
-    <h1>あなたの日常は、いつもの毎日から</h1>
+    <div class="center-text">
+      <h1><strong>あなたの日常は、いつもの毎日から</strong></h1><br>
     <p>あなたの日常の物語は、いつもの毎日から始まります。</p>
     <p>あなたから始まる物語は朝の朝食ブレイクファーストから</p>
     <p>忙しくてランチを食べる時間がない。でも、小腹は満たしたい。</p>
@@ -28,14 +70,34 @@
     <p>我々はジャングルの奥地に向かった</p>
     <p>新たなる時代を求め探求する時代</p>
     <p>~coffee time~</p>
-  <!-- カフェの外観 -->>
-    <img src="cafegikan.jpg" width="600" height="350">
-
+  <!-- カフェの外観 -->
+    <img src="cafe.jpeg">
+  <br><br>
     <h2>coffee timeの由来と歴史</h2>
     <h3>coffee timeの由来</h3>
     <p>coffeeは別名「DIO」と呼びます。「DIO」とはジョジョの奇妙な冒険第３部のラスボスで時を止めます。</p>
     <p>時が止まったように感じるほどスピーディーな商品提供と気持ちの良いサービスを心掛けています。</p>
-    <h3>coffee timeの歴史</h3>
+    <div class="inline">
+      <span><h3>coffee timeの歴史</h3>
+        <p>1980年だったか2000年だったかに代々木にオープンしたセルフサービスのコーヒーショップからcoffee timeは始まりました。</p>
+        <p>おひとりおひとりの空間を大切にした、空間設計と落ち着いた雰囲気でお客様に心地よい日常を提供し続け、今では皆様に溺愛されています。</p></span>
+    <img src="cafe.jpeg" width="600" height="350" class="image">
+    </div>
+    <br><br>
+
+    <img src= width="600" height="350">
+    <h2>質問を質問で返すなッッ！！</h2>
+    <p>吉良吉影の名言で質問を質問で返すとは正気の沙汰ではないと思った際に発言した言葉です。</p>
+    <img src= width="600" height="350">
+    <h2>king gnu</h2>
+    <p>白日を始め最近ではSPECIALZなど多くの人々の耳に残る名曲を生み出しています。</p>
+    <p>ちなみに私のおすすめは王様ランキングの主題歌「裸の勇者」と圧倒的なテンアゲ曲「飛行艇」です。</p>
+    <img src= width="600" height="350">
+    <h2>快適な空間・サービスへのこだわり</h2>
+    <p>圧倒的なッッ快適な空間。丁寧な接客をこだわりやれやれだぜと言ったところ</p>
+    </div>
+
+
 
 
   </body>
