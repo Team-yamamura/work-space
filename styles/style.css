@@ -1,0 +1,11 @@
+/* しっぽり明朝体　400　700 */
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;700&display=swap");
+
+.navbar .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Shippori Mincho B1", serif !important;
+}
