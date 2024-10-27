@@ -11,7 +11,7 @@
     />
 
     <title>Cafe</title>
-    <!-- <style>
+    <!- <style>
       .center-text {
         text-align: center;
       }
@@ -35,12 +35,23 @@
         padding: 10px;
         text-align: center; /* 中央揃え */
       }
+      .underline {
+    text-decoration: underline;
+  }
     </style>
     <style>
       .inline {
         display: flex; /* フレックスボックスを使用 */
-        align-items: center; /* 垂直方向の中央揃え */
+        align-items: right; /* 垂直方向の中央揃え */
       }
+      .left {
+    float: left;
+    margin-right: 10px; /* 画像とテキストの間にスペースを作る */
+  }
+  .right {
+    float: right; /* 右に寄せる */
+    margin-left: 10px; /* 文字との間にスペースを作る */
+  }
     </style>
     <style>
       table {
@@ -53,6 +64,15 @@
         padding: 8px; /* セルの内側のスペース */
         text-align: left; /* テキストを左揃え */
       }
+      .left {
+    float: left;
+    margin-right: 10px; /* 画像とテキストの間にスペースを作る */
+  }
+  .underline {
+    text-decoration: underline;
+    text-decoration-thickness: 3.5px; /* アンダーバーの太さを指定 */
+    text-decoration-color: brown;
+  }
     </style> -->
     <!-- アイコン画像 -->
     <link rel="icon" href="" />
@@ -63,6 +83,12 @@
     <link rel="stylesheet" href="../styles/style.css" />
     <!-- JS -->
     <script src="../scripts/main.js" defer></script>
+    <style>
+      .centered {
+          text-align: center; /* テキストを中央揃え */
+          margin-top: 50px; /* 上に余白を追加 */
+      }
+  </style>
   </head>
 
   <body>
@@ -93,7 +119,7 @@
       </nav>
     </header>
 
-    <div class="center-text">
+    <div class="centered">
       <h1><strong>あなたの日常は、いつもの毎日から</strong></h1>
       <br />
       <p>あなたの日常の物語は、いつもの毎日から始まります。</p>
@@ -106,50 +132,74 @@
       <p>我々はジャングルの奥地に向かった</p>
       <p>新たなる時代を求め探求する時代</p>
       <p>~coffee time~</p>
+      <br><br>
       <!-- カフェの外観 -->
       <img src="../images/cafe.jpeg" />
-      <br /><br />
+      <br><br>
       <h2>coffee timeの由来と歴史</h2>
       <h3>coffee timeの由来</h3>
       <p>
-        coffeeは別名「DIO」と呼びます。「DIO」とはジョジョの奇妙な冒険第３部のラスボスで時を止めます。
+        coffeeは別名「DIO」と呼びます。「DIO」とは
+        ジョジョの奇妙な冒険第３部のラスボスで時を止めます。
       </p>
       <p>
-        時が止まったように感じるほどスピーディーな商品提供と気持ちの良いサービスを心掛けています。
+        時が止まったように感じるほどスピーディーな商品提供と
       </p>
+      <p> 
+        気持ちの良いサービスを心掛けています。
+      </p>
+      <br><br>
       <div class="inline">
         <span
-          ><h3>coffee timeの歴史</h3>
+          ><h3 class="underline" style="color: brown;">coffee timeの歴史</h3>
           <p>
-            1980年だったか2000年だったかに代々木にオープンしたセルフサービスのコーヒーショップからcoffee
-            timeは始まりました。
+            1980年だったか2000年だったかに代々木にオープンした
+          </p>
+            セルフサービスのコーヒーショップからcoffeetimeは始まりました。
           </p>
           <p>
             おひとりおひとりの空間を大切にした、空間設計と落ち着いた雰囲気でお客様に心地よい日常を提供し続け、今では皆様に溺愛されています。
           </p></span
         >
-        <img src="../images/cafe.jpeg" width="600" height="350" class="image" />
+        <img src="../images/logo.jpeg" src="width" ="600" height="350" />
       </div>
       <br /><br />
 
-      <img src="../images/cafe.jpeg" src="width" ="600" height="350" />
-      <h2>質問を質問で返すなッッ！！</h2>
-      <p>
-        吉良吉影の名言で質問を質問で返すとは正気の沙汰ではないと思った際に発言した言葉です。
-      </p>
-      <img src="../images/cafe.jpeg" src="width" ="600" height="350" />
-      <h2>king gnu</h2>
-      <p>
-        白日を始め最近ではSPECIALZなど多くの人々の耳に残る名曲を生み出しています。
-      </p>
-      <p>
-        ちなみに私のおすすめは王様ランキングの主題歌「裸の勇者」と圧倒的なテンアゲ曲「飛行艇」です。
-      </p>
-      <img src="../images/cafe.jpeg" src="width" ="600" height="350" />
-      <h2>快適な空間・サービスへのこだわり</h2>
+      <div class="inline justify-content-center">
+        <img src="../images/coffee.jpeg" src="width" ="600" height="350" />
+        <div>
+          <br><br><br>
+          <h2 class="underline" style="color: brown;">質問を質問で返すなッッ！！</h2>
+          <p>
+            吉良吉影の名言で質問を質問で返すとは正気の沙汰ではないと思った際に発言した言葉です。
+          </p>
+          <p>
+            皆さんもこれを機に質問を質問で返してみてはいかがでしょうか
+          </p>
+        </div>
+      </div>
+      <br><br><br><br><br>
+      <div class="inline justify-content-center">
+        <br><br><br>
+        <span>
+          <h2 class="underline" style="color: brown;">king gnu</h2>
+          <p>
+            白日を始め最近ではSPECIALZなど多くの人々の耳に残る名曲を生み出しています。
+          </p>
+          <p>
+            ちなみに私のおすすめは王様ランキングの主題歌「裸の勇者」と圧倒的なテンアゲ曲「飛行艇」です。
+          </p>
+          </span>
+          <img src="../images/8f38b15b4997119fd8e3e16e88bddcaf.jpeg" src="width" ="500" height="275" alt="Sample Image"/>
+      </div>
+      <div class="justify-content-center">
+        <br><br><br>
+      <h2 class="underline" style="color: brown;">快適な空間・サービスへのこだわり</h2>
       <p>
         圧倒的なッッ快適な空間。丁寧な接客をこだわりやれやれだぜと言ったところ
       </p>
+      <img src="../images/OIP (1).jpg" />
+      </div>
     </div>
 
     <script
