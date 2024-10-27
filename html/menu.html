@@ -17,6 +17,38 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/reset-Reboot.css" />
     <link rel="stylesheet" href="../styles/style.css" />
+    <style>
+      /* デフォルトのフォントサイズ */
+      body {
+          font-size: 16px;
+      }
+
+      /* 画面幅が768px未満の場合のフォントサイズ */
+      @media (max-width: 767px) {
+          body {
+              font-size: 14px;
+          }
+          .container p {
+              font-size: 13px;
+          }
+          .container h2 {
+              font-size: 18px;
+          }
+      }
+
+      /* 画面幅が576px未満の場合のフォントサイズ */
+      @media (max-width: 575px) {
+          body {
+              font-size: 12px;
+          }
+          .container p {
+              font-size: 10px;
+          }
+          .container h2 {
+              font-size: 16px;
+          }
+      }
+  </style>
     <!-- JS -->
     <script src="../scripts/main.js" defer></script>
   </head>
@@ -27,40 +59,45 @@
       <h1 class="container text-center text-dark">メニュー</h1>
 
         <!--food メニュー-->
-        <div class="container text-center mb-5">
+        <div class="container bg-body-tertiary col-12 mx-auto text-center py-5 text-center">
           <h2 class="text-dark">FOOD</h2>
          <div class="container case border border-secondary">
            <!--food-->
-           <div class="row justify-content-center py-3">
-             <div class="col-12 col-md-3 d-flex align-items-end py-3">
+           <div class="row justify-content-center py-5">
+             <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
                   <img class="food-img col-10 mb-3" src="https://tblg.k-img.com/restaurant/images/Rvw/186819/640x640_rect_4193ce6b993e49322a4eafc36bc5009b.jpg"alt>
-                  <p class="col-10 col-md-9 text-center">スパイシーカレー</p>
-                  <p class="col-6 col-md-9">￥７５０</p>
+                  <p class="col-12 col-md-9 text-center">スパイシーカレー</p>
+                  <p class="col-12 col-md-9">￥７５０</p>
                 </div>
               </div>
+             
 
-             <div class="col-12 col-md-3 d-flex align-items-end py-3">
+            
+              <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
                  <img class="food-img col-10 mb-3" src="https://tblg.k-img.com/restaurant/images/Rvw/186818/640x640_rect_b07d17fea1bf1d2525367e624ac427c2.jpg"alt>
-                 <p class="col-10 col-md-9 text-center">フライドチキン</p>
-                 <p class="col-6 col-md-9">￥７５０</p>
+                 <p class="col-12 col-md-9 text-center">フライドチキン</p>
+                 <p class="col-12 col-md-9">￥７５０</p>
                 </div>
              </div>
+            
 
-             <div class="col-12 col-md-3 d-flex align-items-end py-3">
+            
+             <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
                  <img class="food-img col-10 mb-3" src="https://tblg.k-img.com/restaurant/images/Rvw/186818/640x640_rect_111d54c64872ada36ad2d4972b459661.jpg"alt>
-                 <p class="col-10 col-md-9 text-center">クラシックバーガー</p>
-                 <p class="col-6 col-md-9">￥７５０</p>
+                 <p class="col-12 col-md-9 text-center">クラシックバーガー</p>
+                 <p class="col-12 col-md-9">￥７５０</p>
                 </div>
              </div>
+            
 
-             <div class="col-12 col-md-3 d-flex align-items-end py-3">
+             <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
                  <img class="food-img col-10 mb-3" src="https://tblg.k-img.com/restaurant/images/Rvw/186818/640x640_rect_01561634fcbaa510adf37f6b62edef93.jpg"alt>
-                 <p class="col-10 col-md-9 text-center">カップサラダ</p>
-                 <p class="col-6 col-md-9">￥７５０</p>
+                 <p class="col-12 col-md-9 text-center">カップサラダ</p>
+                 <p class="col-12 col-md-9">￥７５０</p>
                 </div>
              </div>
             </div>
@@ -68,20 +105,20 @@
         </div>
 
         <!--drink メニュー-->
-        <div class="container text-center mb-5">
+        <div class="container bg-body-tertiary text-center mb-5">
          <h2 class="text-dark">DRINK</h2>
           <div class="container case border border-secondary">
             <!--drink-->
             <div class="row justify-content-center py-3">
-              <div class="col-12 col-md-3 d-flex align-items-end py-3">
+              <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
                   <img class="food-img col-10 mb-3" src="https://asset.menu.starbucks.co.jp/public/sku_images/4524785000018/4524785000018_11_s.jpg"alt>
-                  <p class="col-10 col-md-9 text-center">自家製コーヒー/ H or I</p>
+                  <p class="col-10 col-md-9 text-center">自家製コーヒー/H or I</p>
                   <p class="col-6 col-md-9">￥３５０</p>
                 </div>
               </div>
 
-              <div class="col-12 col-md-3 d-flex align-items-end py-3">
+              <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
                   <img class="food-img col-10 mb-3" src="https://asset.menu.starbucks.co.jp/public/sku_images/4524785062870/4524785062870_11_s.jpg"alt>
                   <p class="col-10 col-md-9 text-center">カフェラテ/ H or I</p>
@@ -89,7 +126,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-3 d-flex align-items-end py-3">
+              <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
                   <img class="food-img col-10 mb-3" src="https://asset.menu.starbucks.co.jp/public/sku_images/4524785024748/4524785024748_11_s.jpg"alt>
                   <p class="col-10 col-md-9 text-center">アイスティー</p>
@@ -97,7 +134,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-3 d-flex align-items-end py-3">
+              <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
                   <img class="food-img col-10 mb-3" src="https://asset.menu.starbucks.co.jp/public/sku_images/4524785305366/4524785305366_11_s.jpg"alt>
                   <p class="col-10 col-md-9 text-center">アールグレイ</p>
@@ -109,12 +146,12 @@
         </div>
 
         <!--dessert メニュー-->
-        <div class="container text-center mb-5">
+        <div class="container bg-body-tertiary text-center mb-3">
          <h2 class="text-dark">DESSERT</h2>
           <div class="container case border border-secondary">
             <!--drink-->
             <div class="row justify-content-center py-3">
-              <div class="col-12 col-md-3 d-flex align-items-end py-3">
+              <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
                   <img class="food-img col-10 mb-3" src="https://tblg.k-img.com/restaurant/images/Rvw/186817/640x640_rect_51414836a21996821e56f9709e337f95.jpg"alt>
                   <p class="col-10 col-md-9 text-center">抹茶大福パンケーキ</p>
@@ -122,7 +159,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-3 d-flex align-items-end py-3">
+              <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
                   <img class="food-img col-10 mb-3" src="https://cake.jp/mag/wp-content/uploads/2022/01/22288153_m.jpg"alt>
                   <p class="col-10 col-md-9 text-center">アップルパイ</p>
@@ -130,15 +167,15 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-3 d-flex align-items-end py-3">
+              <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
-                  <img class="food-img col-10 mb-3" src="https://tblg.k-img.com/restaurant/images/Rvw/186817/640x640_rect_45dc62cb38b7fca49e5a826ac1e69183.jpg"alt>
+                  <img class="food-img col-10 mb-3" src="https://tblg.k-img.com/restaurant/images/Rvw/186817/640x640_rect_51414836a21996821e56f9709e337f95.jpg"alt>
                   <p class="col-10 col-md-9 text-center">ほうじ茶パンケーキ</p>
                   <p class="col-6 col-md-9">￥５５０</p>
                 </div>
               </div>
 
-              <div class="col-12 col-md-3 d-flex align-items-end py-3">
+              <div class="col-lg-3 col-sm-6 py-5 d-flex align-items-end">
                 <div class="row flex-column align-items-center">
                   <img class="food-img col-10 mb-3" src="https://tblg.k-img.com/restaurant/images/Rvw/186817/640x640_rect_99623d509a4a3b9e851fe57514ddf1d5.jpg"alt>
                   <p class="col-10 col-md-9 text-center">チョコワッフル</p>
@@ -150,6 +187,7 @@
         </div>
       </div>
     </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
