@@ -18,6 +18,7 @@ header {
 }
 body {
   font-family: "Shippori Mincho B1", serif !important;
+  background-color: tertiary;
 }
 
 h1 {
@@ -69,4 +70,41 @@ h1 {
 .item-effect:hover {
   box-shadow: none;
   transform: translateY(5px);
+}
+
+.newslist {
+  background-color: #fbdac8;
+  color: #6c2c2f;
+}
+
+.news {
+  background-color: #fdede4;
+  color: #6c2c2f;
+  box-shadow: 0px 10px 10px #e6bfb2;
+}
+
+.news:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.newslink {
+  color: #6c2c2f;
+  text-decoration: none;
+}
+
+.more {
+  text-align: right;
+}
+
+.morelink {
+  color: #6c2c2f;
+}
+
+.morelink:hover {
+  color: #fff;
+}
+
+footer {
+  background-color: #6c2c2f;
 }
