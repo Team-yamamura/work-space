@@ -18,7 +18,7 @@ header {
 }
 body {
   font-family: "Shippori Mincho B1", serif !important;
-  background-color: tertiary;
+  background-color: #f8f9fa;
 }
 
 h1 {
@@ -73,24 +73,44 @@ h1 {
 }
 
 .newslist {
-  background-color: #fbdac8;
+  background-color: #fdede4;
   color: #6c2c2f;
 }
 
-.news {
-  background-color: #fdede4;
-  color: #6c2c2f;
-  box-shadow: 0px 10px 10px #e6bfb2;
+.news::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #6c2c2f;
+  bottom: -7px;
+  transform: scale(0, 1);
+  transform-origin: right top;
 }
 
 .news:hover {
-  box-shadow: none;
-  transform: translateY(5px);
+  transform: scale(1, 1);
+  transform-origin: left top;
+}
+
+.news:hover::after {
+  transform: scale(1, 1);
+  transform-origin: left top;
+}
+
+.news {
+  color: #6c2c2f;
 }
 
 .newslink {
   color: #6c2c2f;
   text-decoration: none;
+}
+
+.notice {
+  font-family: "游ゴシック";
+  background-color: #942343;
 }
 
 .more {
@@ -102,9 +122,26 @@ h1 {
 }
 
 .morelink:hover {
-  color: #fff;
+  color: #deb887;
 }
 
 footer {
   background-color: #6c2c2f;
+}
+
+.footerNav {
+  width: 100;
+  background-color: #f8f9fa;
+}
+
+.footerlink {
+  text-decoration: none;
+  color: #6c2c2f;
+  border-left: 1px solid #6c2c2f;
+  &.about {
+    border-right: 1px solid #6c2c2f;
+  }
+}
+.footerlink:hover {
+  color: #d2691e;
 }
